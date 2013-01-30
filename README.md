@@ -21,7 +21,7 @@ zveen_twitter:
   checkSSL: false
 ```
 
-Look into [Twitter class](https://github.com/Zveen/TwitterBundle/blob/master/Services/Twitter.php) for more info.
+Usage in controllers:
 
 ```php
 public function twitterAction(Request $request){  
@@ -38,6 +38,9 @@ public function twitterAction(Request $request){
     exit();
 }
 ```
+
+Look into [Twitter class](https://github.com/Zveen/TwitterBundle/blob/master/Services/Twitter.php) for more info about the internals.
+
 
 License
 -------
