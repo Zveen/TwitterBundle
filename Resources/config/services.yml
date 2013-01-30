@@ -1,0 +1,7 @@
+services:
+  zveen.twitter:
+    class: "%zveen_twitter.class%"
+    arguments:
+      config: "%zveen_twitter.config%"
+      session: "@session"
+  
