@@ -60,6 +60,7 @@ class Twitter {
     */
     private $checkSSL;
     
+	
     public function __construct($config, Session $session) {
         $this->consumerKey = $config['consumerKey'];
         $this->consumerSecret = $config['consumerSecret'];
@@ -78,6 +79,14 @@ class Twitter {
      */
     public function canQueryAPI(){
         return $this->session->has('zveen_twitter.oauthAccessToken');
+    }
+	
+	/**
+     * Returns if login is canceled
+     * @return boolean
+     */
+    public function isLoginDenied($request){
+        return $request->request->has('denied');
     }
     
     /**
