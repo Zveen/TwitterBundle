@@ -86,7 +86,7 @@ class Twitter {
      * @return boolean
      */
     public function isLoginDenied($request){
-        return $request->request->has('denied');
+        return $request->query->has('denied');
     }
     
     /**
